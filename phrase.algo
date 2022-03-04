@@ -1,0 +1,48 @@
+ALGORITHME phrase
+
+var nc,nm,nv : entier
+var c,p : caractere
+
+Début
+
+    nv:=0
+    nm:=0
+    nv:=0
+    Faire
+        lire(c)
+        // calcul nombre de caractere
+        nc++
+        // tester si deux espace 
+        Tant que (p=' ' && c=' ')
+            ecrire("Merci de tapez un autre caractere que l'espace")
+            lice(c)    
+        Fin Tant que
+        // calcul nombre de mot
+        Si (p=' ')
+          nm++  
+        Fin Si
+        // variable intermediare caractere precedent 
+        p:=c
+        //test voyall
+
+        SELON (Majus(c)) FAIRE
+            cas 'A' : nv++
+            cas 'E' : nv++
+            cas 'O' : nv++
+            cas 'I' : nv++
+            cas 'U' : nv++
+            cas 'V' : nv++
+        Fin SELON
+
+         
+
+
+
+    Tant que(c <>'.')
+    
+    ecrire("Le nombre de caractere est : ", nc)
+    ecrire("le nombre de mot est : "  ,nm)
+    ecrire("le nombre de voyelle est :" ,nv)
+
+    
+Fin
